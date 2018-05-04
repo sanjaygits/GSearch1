@@ -1,4 +1,4 @@
-# Author    : Sanjay Kumar
+# Author    : Sanjay Kumar Kaleswaran
 # Purpose   : Edureka Python Self Paced Course Project.
 #               Q1: Create a python script called googlesearch that provides a command line utility
 #               to perform google search. It gives you the top links (search results) of whatever you
