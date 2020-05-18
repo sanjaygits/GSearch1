@@ -12,6 +12,7 @@ import urllib.response
 import urllib.error
 from pprint import pprint 
 import json
+import sys
 
 #To perform a google search we would need a API key and Custom Search ID.
 #I have generated these from https://cse.google.com/cse/
@@ -32,7 +33,7 @@ url = 'https://www.googleapis.com/customsearch/v1?q='
 # HTTPResponse object is then read through the urllib.response.read().
 # The encoding of the server is assumed to be utf-8 and then the JSON of the response is obtained. 
 
-def search_google_query():
+def search_google_query(queryurl):
     try:
         response = urllib.request.urlopen(queryurl)
 
@@ -84,10 +85,10 @@ def main():
     print("The query url is :"+queryurl)
 
     #Call search_google_query() to generate the output.
-    search_google_query()
+    search_google_query(queryurl)
 
 
-if __name__==__main__:
+if __name__=='__main__':
     main()
     
 
