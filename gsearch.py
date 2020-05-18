@@ -76,20 +76,20 @@ def search_google_query(queryurl):
         print("Unexpected Error", sys.exc_info()[0])
         raise
 
-def main():
+def main(query):
     # Provide the Query
-    query = input("Enter your search query: ")
+    #query = input("Enter your search query: ")
 
     #Build the full query. 
     queryurl = url+query+'&cx='+my_cx_id+'&key='+my_api_key
-    print("The query url is :"+queryurl)
+    #print("The query url is :"+queryurl)
 
     #Call search_google_query() to generate the output.
     search_google_query(queryurl)
 
 
 if __name__=='__main__':
-    main()
+    main("test")
     
 
 
